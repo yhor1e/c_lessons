@@ -3,7 +3,7 @@
 float getMax (float a, float b);
 
 void f(void) {
-  int a = 0;
+  static int a = 0;
   a++;
   printf("a:%d\n", a);
 }
@@ -12,8 +12,8 @@ void f(void) {
 int main(void){
 
   f();
-
-  printf("a:%d\n", a);
+  f();
+  f();
 
   return 0;
 }
