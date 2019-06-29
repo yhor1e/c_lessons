@@ -3,9 +3,13 @@
 int main(void){
 
   int x = 10;
-  float y = 5.2;
-  char c = 'A';
+
+  x = 10 % 3;
+
+  x += 3;
+
+  x++;
   
-  printf("x = %d, y = %f, c = %c \n", x, y, c);
+  printf("%d\n", x);
   return 0;
 }
