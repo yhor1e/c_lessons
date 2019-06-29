@@ -2,15 +2,18 @@
 
 float getMax (float a, float b);
 
-int main(void){
-
-  float result;
-  result = getMax(2.3, 5.2);
-  printf("%f\n", result);
-
-  return 0;
+void f(void) {
+  int a = 0;
+  a++;
+  printf("a:%d\n", a);
 }
 
-float getMax (float a, float b){
-  return (a >= b) ? a: b;
+
+int main(void){
+
+  f();
+
+  printf("a:%d\n", a);
+
+  return 0;
 }
