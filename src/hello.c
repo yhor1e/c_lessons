@@ -2,16 +2,11 @@
 
 int main(void){
 
-  int sales[3];
-  sales[0] = 200;
-  sales[1] = 400;
-  sales[2] = 500;
+  char s1[] = {'a', 'b', 'c', '\0'};
+  char s2[] = "abc";
 
-  printf("%d\n", sales[1]);
-
-  int sales2[] = {200, 400, 500};
-
-  printf("%d\n", sales2[1]);
+  printf("%c\n", s1[1]);
+  printf("%c\n", s2[1]);
 
   return 0;
 }
