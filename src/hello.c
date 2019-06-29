@@ -1,27 +1,18 @@
 #include <stdio.h>
 
+
+float getMax (float a, float b){
+  if(a >= b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
 int main(void){
 
-  /*
-  int m = 20;
-
-  while(m < 10) {
-    printf("m: %d\n", m);
-    m++;
-  }
-  */
-
-  int m;
-  for (m = 0; m < 10; m++){
-    if (m == 3) {
-      continue;
-    }
-    if (m == 8) {
-      break;
-    }
-    printf("m: %d\n", m);
-  }
-
-
+  float result;
+  result = getMax(2.3, 5.2);
+  printf("%f\n", result);
   return 0;
 }
