@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 
-void f(long a){
-  a += 100;
-  printf("%ld\n", a);
+void f(long *pa){
+  *pa += 100;
+  printf("%ld\n", *pa);
 }
 
 int main(void){
 
   long a = 1000;
-  f(a);
+  f(&a);
 
 
   return 0;
